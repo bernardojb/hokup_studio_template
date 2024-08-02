@@ -2,7 +2,7 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "@/components/contact-form/ContactForm";
+import ContactForm from "@/components/contact-forms/ContactForm";
 import Animation from "@/components/animations/Animation";
 
 const Home = () => {

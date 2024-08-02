@@ -2,11 +2,13 @@
 import * as React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import ContactForm from "@/components/contact-form/ContactForm";
+import ContactForm from "@/components/contact-forms/ContactForm";
 import { motion } from "framer-motion";
 import Marquee from "react-fast-marquee";
 import Hero1 from "@/components/hero/Hero1";
 import Hero2 from "@/components/hero/Hero2";
+import Services1 from "@/components/services/Services1";
+import LogoClouds1 from "@/components/logo-clouds/LogoClouds1";
 
 const Home = () => {
   return (
@@ -15,11 +17,32 @@ const Home = () => {
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
         background="bg-hero"
+        pill={true}
+        pillText="Hokup studio pill component."
+        pillLink="#pill-link"
+        pillHighlightText="See More"
+        pillHighlightColor="text-typo-primary"
+        buttonText="h studio btn"
+        buttonLink="#button-link-1"
+        buttonText2="h studio btn"
+        buttonLink2="#button-link-1"
       />
 
-      <Hero2
+      <LogoClouds1
+        title="Over 10.000 projects created."
+        backgroundColor="bg-black"
+      />
+
+      <Services1
+        backgroundColor="bg-black"
+        subtitle="A better solution"
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        pillColor="bg-primary-default"
+        pillText1="Lorem Ipsum"
+        pillText2="Lorem Ipsum"
+        pillText3="Lorem Ipsum"
+        pillText4="Lorem Ipsum"
       />
 
       <section className="py-20">

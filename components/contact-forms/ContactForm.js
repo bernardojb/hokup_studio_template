@@ -208,11 +208,11 @@ const ContactForm = () => {
                             alt=""
                           />
                         </div>
-                        <p className="font-raleway group w-full text-xs font-medium text-gray sm:max-w-[248px]">
+                        <p className="font-raleway text-gray group w-full text-xs font-medium sm:max-w-[248px]">
                           Ao enviar esse formulário, você concorda com a nossa{" "}
                           <Link
                             href="/politica-de-privacidade"
-                            className="font-bold transition duration-200 ease-out hover:text-accent hover:transition hover:duration-200 hover:ease-out"
+                            className="hover:text-accent font-bold transition duration-200 ease-out hover:transition hover:duration-200 hover:ease-out"
                           >
                             Política de Privacidade.
                           </Link>

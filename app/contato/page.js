@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "@/components/contact-form/ContactForm";
+import ContactForm from "@/components/contact-forms/ContactForm";
 import Animation from "@/components/animations/Animation";
 
 const page = () => {
