@@ -58,6 +58,9 @@ module.exports = {
         primary: ["Inter", "sans-serif"],
         secondary: ["Inter", "sans-serif"],
       },
+      backgroundImage: {
+        hero: "url('/assets/images/hero-bg.jpg')",
+      },
     },
   },
   plugins: [],

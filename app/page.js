@@ -14,6 +14,7 @@ const Home = () => {
       <Hero1
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        background="bg-hero"
       />
 
       <Hero2

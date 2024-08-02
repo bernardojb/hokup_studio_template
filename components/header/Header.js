@@ -79,7 +79,7 @@ export default function Header() {
         variants={openNav}
         initial={false}
       >
-        <div className="mx-auto flex h-[80px] min-h-[80px] w-full flex-row items-center">
+        <div className="container mx-auto flex h-[80px] min-h-[80px] w-full flex-row items-center">
           {/* Logo */}
           <a href="/" className="pr-5">
             <Image
