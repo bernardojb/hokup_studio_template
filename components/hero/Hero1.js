@@ -1,0 +1,33 @@
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import MobCTA from "../buttons/MobCTA";
+import Button1 from "../buttons/Button1";
+
+function Hero1({ title, text, background }) {
+  return (
+    <section className={`h-[100svh] w-full text-white ${background}`}>
+      <div className="flex h-full w-full flex-col items-center justify-center">
+        <div className="flex w-full flex-col items-center justify-center text-center">
+          <h1 className="font-primary text-typo-primary mb-6 max-w-5xl text-center text-6xl font-bold">
+            {title}
+          </h1>
+          <p className="font-secondary text-typo-secondary mb-11 max-w-xl text-center text-lg font-normal">
+            {text}
+          </p>
+        </div>
+
+        <div className="flex flex-col items-center justify-center sm:flex-row">
+          <Button1
+            style="mr-0 sm:mr-6 mb-5 sm:mb-0"
+            text="Button 1"
+            link="#scroll-solucoes"
+          />
+          <Button1 style="bg-transparent" text="Button 1" link="/contato" />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default Hero1;
