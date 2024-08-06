@@ -92,12 +92,14 @@ export default function Header() {
           </a>
 
           {/* Navigation */}
-          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-extra lg:flex">
+          <div
+            className={`ml-auto hidden w-full flex-row items-center justify-end lg:flex`}
+          >
             {routerData.map((i) => (
               <Link
                 key={i.id}
                 href={i.href}
-                className="ml-10 font-primary text-lg font-bold uppercase hover:text-primary-light"
+                className={`ml-10 font-primary text-lg font-bold uppercase hover:text-primary-dark ${i.href === pathname ? "text-primary-default" : "text-typo-extra"}`}
               >
                 {i.title}
               </Link>
@@ -128,15 +130,17 @@ export default function Header() {
             style={{}}
             className="block"
           >
-            <ul className=" mt-5 text-lg uppercase text-white">
+            <ul className=" mt-5 text-lg uppercase text-typo-extra">
               {routerData.map((i) => (
                 <Link
                   key={i.id}
                   href={i.href}
-                  className={`mx-5 transition duration-300 ease-in-out`}
+                  className={`mx-5 transition duration-300 ease-in-out `}
                   onClick={() => setToggle(false)}
                 >
-                  <p className={`py-2 font-primary text-base font-bold`}>
+                  <p
+                    className={`py-2 font-primary text-base font-bold ${i.href === pathname ? "text-primary-default" : "text-typo-extra"}`}
+                  >
                     {i.title}
                   </p>
                 </Link>

@@ -1,5 +1,5 @@
 const metaData = {
-  title: "hokup Template",
+  title: "hokup studio template | Custom template websites made on demand",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   subtitle: "The one and only template for everything.",

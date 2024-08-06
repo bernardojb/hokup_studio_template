@@ -54,7 +54,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
       >
         <div className="flex flex-col pb-5">
           <p
-            className={`uppercase ${isOpen ? "text-primary-default" : "text-typo-secondary"}`}
+            className={`font-primary font-semibold uppercase ${isOpen ? "text-primary-default" : "text-typo-secondary"}`}
           >
             {props.steps}
           </p>

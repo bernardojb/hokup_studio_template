@@ -1,27 +1,23 @@
-// import {
-//   CloudArrowUpIcon,
-//   LockClosedIcon,
-//   ServerIcon,
-// } from "@heroicons/react/20/solid";
+import Image from "next/image";
 
 const features = [
   {
     name: "Push to deploy.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: "",
+    icon: "/assets/icons/general/cloud.svg",
   },
   {
     name: "SSL certificates.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: "",
+    icon: "/assets/icons/general/cloud.svg",
   },
   {
     name: "Database backups.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: "",
+    icon: "/assets/icons/general/cloud.svg",
   },
 ];
 
@@ -51,6 +47,12 @@ export default function Content1({ background, image, subtitle, title, text }) {
                       {/* <feature.icon
                         aria-hidden="true"
                         className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                      /> */}
+                      {/* <Image
+                        src={feature.icon}
+                        width="20"
+                        height="20"
+                        alt="Icon"
                       /> */}
                       {feature.name}
                     </dt>{" "}

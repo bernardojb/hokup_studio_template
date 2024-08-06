@@ -54,13 +54,8 @@ const Home = () => {
 
       <LogoClouds1
         title="Over 10.000 projects created."
-        backgroundColor="bg-black"
+        background="bg-black"
       />
-
-      {/* <LogoClouds2
-        title="Over 10.000 projects created."
-        backgroundColor="bg-black"
-      /> */}
 
       <Content1
         subtitle={"A better solution"}
@@ -73,7 +68,7 @@ const Home = () => {
       />
 
       <Services1
-        backgroundColor="bg-initialGradient"
+        background="bg-initialGradient"
         subtitle="A better solution"
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
@@ -81,11 +76,6 @@ const Home = () => {
       />
 
       <Stats1 background="bg-middleGradient" />
-
-      {/* <div className="grid grid-cols-12">
-        <div className="col-span-4 h-32 w-full bg-red-500">teste</div>
-        <div className="col-span-6 h-32 w-full bg-blue-500">teste</div>
-      </div> */}
 
       <AccordionSection2
         background="bg-finalGradient"
@@ -106,6 +96,7 @@ const Home = () => {
               expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
               in laborum sed rerum et corporis.”"
         position="CEO of Workcation"
+        background="bg-transparent"
       />
 
       <ContactForm2

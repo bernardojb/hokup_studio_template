@@ -16,7 +16,7 @@ const Footer2 = ({ text, logo }) => {
             <Link href="/" className="">
               <Image
                 src={logo}
-                className="mb-5 brightness-[10] grayscale"
+                className="mb-5"
                 alt="BRITE Informática"
                 height={30}
                 width={120}
@@ -26,7 +26,7 @@ const Footer2 = ({ text, logo }) => {
               {text}
             </p>
 
-            <div className="mb-12 flex flex-row">
+            <div className="flex flex-row">
               {generalData.links.map((i) => (
                 <a target="_blank" href={i.href} className="mr-4">
                   <Image
@@ -43,7 +43,7 @@ const Footer2 = ({ text, logo }) => {
 
           <div className=" col-span-12 lg:col-span-6">
             <div className="flex flex-col items-start justify-start lg:items-end lg:justify-end">
-              <div className="flex flex-row items-start justify-start lg:justify-end">
+              <div className="asdasdasd flex flex-row flex-wrap items-start justify-start lg:justify-end">
                 {routerData.map((single) => (
                   <Link
                     href={single.href}

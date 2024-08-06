@@ -17,7 +17,7 @@ function ContactForm2({
       <div className="grid grid-cols-12 gap-4 gap-y-20 lg:gap-y-0">
         <div className="col-span-12 lg:col-span-3 lg:col-start-2">
           <div className="flex flex-col">
-            <p className="mb-3 font-primary text-base text-primary-default">
+            <p className="mb-3 font-primary text-base font-semibold text-primary-default">
               {subtitle}
             </p>
             <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
@@ -32,8 +32,8 @@ function ContactForm2({
                   <Image
                     src={i.image}
                     alt="Social media icon"
-                    width={18}
-                    height={18}
+                    width={24}
+                    height={24}
                     className="transition duration-200 ease-out hover:brightness-200"
                   />
                 </a>
@@ -49,7 +49,7 @@ function ContactForm2({
               </p>
               <div className="w-fit">
                 <a href={`mailto:${email}`}>
-                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary hover:text-typo-secondary sm:text-4xl">
                     {email}
                   </h1>
                 </a>
@@ -61,7 +61,7 @@ function ContactForm2({
               </p>
               <div className="w-fit">
                 <a href={`tel:${phone}`}>
-                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary hover:text-typo-secondary sm:text-4xl">
                     {phone}
                   </h1>
                 </a>
@@ -72,8 +72,8 @@ function ContactForm2({
                 Social
               </p>
               <div className="w-fit">
-                <a href={socialLink}>
-                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                <a href={socialLink} target="_blank">
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary hover:text-typo-secondary sm:text-4xl">
                     {social}
                   </h1>
                 </a>

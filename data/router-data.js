@@ -6,27 +6,27 @@ const routerData = [
   },
   {
     id: 2,
-    href: "/",
+    href: "/about",
     title: "about",
   },
   {
     id: 3,
-    href: "/",
+    href: "/projects",
     title: "projects",
   },
   {
     id: 4,
-    href: "/",
-    title: "contact",
+    href: "/contato",
+    title: "contato",
   },
   {
     id: 5,
-    href: "/",
+    href: "/privacy",
     title: "privacy",
   },
   {
     id: 6,
-    href: "/",
+    href: "/login",
     title: "login",
   },
 ];

@@ -1,6 +1,16 @@
 import React from "react";
 
 function LogoClouds1({ title, background }) {
+  const cloudImages = [
+    { id: "1", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "2", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "3", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "4", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "5", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "6", src: "/assets/icons/logos/logo-hokup.svg" },
+    { id: "7", src: "/assets/icons/logos/logo-hokup.svg" },
+  ];
+
   return (
     <div className={` py-24 sm:py-32 ${background}`}>
       <div className="mx-auto max-w-7xl px-4">
