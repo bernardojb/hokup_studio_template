@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
-const Button1 = ({ link, text, style, target }) => {
+const Button1 = ({ link, text, style, target, arrow }) => {
   return (
     <Link href={link} target={target}>
       <div
@@ -10,6 +11,14 @@ const Button1 = ({ link, text, style, target }) => {
         <p className="flex items-center justify-center break-keep font-primary text-sm font-bold">
           {text}
         </p>
+        {arrow && (
+          <Image
+            width={20}
+            height={20}
+            src={"/assets/icons/general/arrow.svg"}
+            alt=""
+          />
+        )}
       </div>
     </Link>
   );

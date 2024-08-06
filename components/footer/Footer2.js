@@ -45,7 +45,7 @@ const Footer2 = ({ text, logo }) => {
               <div className="flex flex-row items-start justify-start lg:justify-end">
                 {footerData2.map((single) => (
                   <Link href={single.href} key={single.id}>
-                    <h4 className=" mb-6 mr-8 font-primary text-lg font-bold text-typo-secondary lg:ml-8 lg:mr-0 ">
+                    <h4 className=" mb-6 mr-8 font-primary text-lg font-bold text-typo-extra lg:ml-8 lg:mr-0 ">
                       {single.title}
                     </h4>
                   </Link>
@@ -56,6 +56,7 @@ const Footer2 = ({ text, logo }) => {
                 text="studio btn"
                 style="w-fit bg-transparent text-typo-primary font-primary"
                 target=""
+                arrow
               />
             </div>
           </div>

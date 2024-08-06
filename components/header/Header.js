@@ -74,7 +74,7 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className="bg-headerGradient fixed z-[999] flex min-h-[80px] w-full flex-col border-b-[1px] border-[#fff2] px-5 backdrop-blur-lg"
+        className="fixed z-[999] flex min-h-[80px] w-full flex-col border-b-[1px] border-[#fff2] bg-headerGradient px-4 backdrop-blur-lg"
         animate={toggle ? "open" : "closed"}
         variants={openNav}
         initial={false}
@@ -91,7 +91,7 @@ export default function Header() {
           </a>
 
           {/* Navigation */}
-          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-primary lg:flex">
+          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-extra lg:flex">
             {headerData.map((i) => (
               <Link
                 key={i.id}
@@ -135,9 +135,7 @@ export default function Header() {
                   className={`mx-5 transition duration-300 ease-in-out`}
                   onClick={() => setToggle(false)}
                 >
-                  <p
-                    className={`${pathname === "/sobre" && "text-green"} py-2 text-base transition duration-500 ease-out hover:text-white hover:transition hover:duration-500 hover:ease-out`}
-                  >
+                  <p className={`py-2 font-primary text-base font-bold`}>
                     {i.text}
                   </p>
                 </Link>

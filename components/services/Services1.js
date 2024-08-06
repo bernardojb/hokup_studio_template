@@ -41,7 +41,7 @@ function Services1({ subtitle, title, text, backgroundColor, pillColor }) {
   ];
   return (
     <div class={`${backgroundColor} py-24 sm:py-32`}>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-4">
         <div class="mx-auto max-w-2xl lg:text-center">
           <h2 class="font-primary text-primary-default">{subtitle}</h2>
           <p class="mt-2 font-primary text-4xl font-bold tracking-tight text-typo-primary sm:text-6xl">

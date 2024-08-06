@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonial1({
   image,
   text,
@@ -8,20 +10,28 @@ export default function Testimonial1({
 }) {
   return (
     <section
-      className={`relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 ${background}`}
+      className={`relative isolate overflow-hidden px-4 py-24 sm:py-32 ${background}`}
     >
       <div className="absolute inset-0 -z-10" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
-        <img alt="" src={logo} className="mx-auto h-12" />
+        <Image
+          width={120}
+          height={40}
+          alt="Testimonial Logo"
+          src={logo}
+          className="mx-auto h-12"
+        />
         <figure className="mt-10">
           <blockquote className="text-center font-primary text-xl font-semibold leading-8 text-typo-primary sm:text-2xl sm:leading-9">
             <p>{text}</p>
           </blockquote>
           <figcaption className="mt-10">
-            <img
-              alt=""
-              src={image}
-              className="mx-auto h-10 w-10 rounded-full"
+            <Image
+              src={"/assets/icons/general/placeholder-testimonial.svg"}
+              width={40}
+              height={40}
+              alt="Testimonial Miniature"
+              className="mx-auto rounded-full"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
               <div className="font-primary font-semibold text-typo-primary">

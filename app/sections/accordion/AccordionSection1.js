@@ -4,7 +4,7 @@ import AccordionSimple from "@/components/accordions/Accordion1";
 
 function AccordionSection1() {
   return (
-    <section id="scroll-approach" className=" px-[10px] md:px-5">
+    <section id="scroll-approach" className=" px-[10px] lg:px-4">
       <div className="pt-[80px]">
         <motion.div
           viewport={{ once: true, margin: "-300px" }}

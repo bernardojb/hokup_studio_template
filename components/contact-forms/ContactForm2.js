@@ -13,7 +13,7 @@ function ContactForm2({
   background,
 }) {
   return (
-    <section className={`px-5 py-32 ${background}`}>
+    <section className={`px-4 py-32 ${background}`}>
       <div className="grid grid-cols-12 gap-4 gap-y-20 lg:gap-y-0">
         <div className="col-span-12 lg:col-span-3 lg:col-start-2">
           <div className="flex flex-col">
@@ -44,7 +44,7 @@ function ContactForm2({
         <div className="col-span-12 lg:col-span-6 lg:col-start-6">
           <div className="flex flex-col">
             <div className=" mb-16 ">
-              <p className="mb-3 font-primary text-base text-typo-secondary">
+              <p className="mb-3 font-primary text-base font-semibold text-typo-secondary">
                 Email
               </p>
               <div className="w-fit">
@@ -56,7 +56,7 @@ function ContactForm2({
               </div>
             </div>
             <div className=" mb-16 ">
-              <p className="mb-3 font-primary text-base text-typo-secondary">
+              <p className="mb-3 font-primary text-base font-semibold text-typo-secondary">
                 Phone
               </p>
               <div className="w-fit">
@@ -67,8 +67,8 @@ function ContactForm2({
                 </a>
               </div>
             </div>
-            <div className=" mb-16 ">
-              <p className="mb-3 font-primary text-base text-typo-secondary">
+            <div className="">
+              <p className="mb-3 font-primary text-base font-semibold text-typo-secondary">
                 Social
               </p>
               <div className="w-fit">

@@ -100,7 +100,7 @@ module.exports = {
         typo: {
           primary: "#FFFFFF",
           secondary: "#C0C0C0",
-          extra: "#1F2937",
+          extra: "#dddddd",
         },
       },
       fontFamily: {

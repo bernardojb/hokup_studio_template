@@ -20,7 +20,7 @@ function Stats1({ background }) {
   ];
   return (
     <div class={` py-24 sm:py-32 ${background}`}>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-4">
         <dl class="grid grid-cols-1 gap-x-4 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((i) => (
             <div class="mx-auto flex max-w-xs flex-col gap-y-4" key={i.id}>

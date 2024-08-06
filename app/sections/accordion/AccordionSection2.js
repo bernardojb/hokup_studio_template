@@ -3,7 +3,7 @@ import Accordion1 from "@/components/accordions/Accordion1";
 
 function AccordionSection2({ background, button }) {
   return (
-    <section className={`${background} px-5 py-32`}>
+    <section className={`${background} px-4 py-32`}>
       <div className={``}>
         <div className="grid grid-cols-12 gap-4">
           <div className=" col-span-12 mb-20 lg:col-span-3 lg:col-start-2 lg:mb-0">

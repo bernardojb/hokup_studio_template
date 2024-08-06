@@ -11,50 +11,50 @@ function LogoClouds1({ title, background }) {
           <img
             alt="Transistor"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2"
           />
           <img
             alt="Reform"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2"
           />
           <img
             alt="Tuple"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2"
           />
           <img
             alt="SavvyCal"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2"
           />
           <img
             alt="Statamic"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2 sm:col-start-2"
           />
           <img
             alt="SavvyCal"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 max-h-12 w-full object-contain sm:col-span-2"
           />
           <img
             alt="Statamic"
             src="/assets/icons/logos/logo-hokup.svg"
-            width={158}
-            height={48}
+            width={150}
+            height={40}
             className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-span-2"
           />
         </div>

@@ -37,14 +37,6 @@ const accordionSimpleData = [
     tags: ["QA", "SETUP", "DNS"],
     background: "bg-gradient-img-accordion-04",
   },
-  // {
-  //   id: 4,
-  //   steps: "005",
-  //   title: "FOLLOW-UP",
-  //   text: "Suporte técnico, aprimoramento e evolução do produto digital através de manutenção adaptativa, corretiva e preventiva com base em coleta de dados, estatísticas de desempenho e desk research.",
-  //   tags: ["HOSPEDAGEM", "MANUTENÇÃO", "GARANTIA"],
-  //   background: "bg-gradient-img-accordion-05",
-  // },
 ];
 
 const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
@@ -61,7 +53,11 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
         className="w-full cursor-pointer"
       >
         <div className="flex flex-col pb-5">
-          <p className="uppercase text-primary-default ">{props.steps}</p>
+          <p
+            className={`uppercase ${isOpen ? "text-primary-default" : "text-typo-secondary"}`}
+          >
+            {props.steps}
+          </p>
           <h1
             className={` text-4xl font-bold sm:text-6xl ${
               isOpen ? "text-typo-primary" : "text-typo-secondary"

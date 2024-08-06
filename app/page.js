@@ -42,7 +42,12 @@ const Home = () => {
               text="h studio btn"
               link="/"
             />
-            <Button1 style="bg-transparent" text="h studio btn" link="/" />
+            <Button1
+              style="bg-transparent"
+              text="h studio btn"
+              link="/"
+              arrow
+            />
           </>
         }
       />
@@ -108,7 +113,7 @@ const Home = () => {
         subtitle="Contact"
         title="Get in touch."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
-        socialLink="/"
+        socialLink="https://www.instagram.com/"
         email="contact@hokup.com.br"
         phone="+55 11 9 9697-8140"
         social="@hokup.studio"
