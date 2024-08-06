@@ -10,11 +10,11 @@ import Hero2 from "@/components/hero/Hero2";
 import Services1 from "@/components/services/Services1";
 import LogoClouds1 from "@/components/logo-clouds/LogoClouds1";
 import LogoClouds2 from "@/components/logo-clouds/LogoClouds2";
-import AccordionSection1 from "@/sections/accordion/AccordionSection1";
-import AccordionSection2 from "@/sections/accordion/AccordionSection2";
+import AccordionSection1 from "./sections/accordion/AccordionSection1";
+import AccordionSection2 from "./sections/accordion/AccordionSection2";
 import Stats1 from "@/components/stats/Stats1";
 import Content1 from "@/components/content/Content1";
-import Accordion1 from "@/components/accordions/Accordion1";
+import Content2 from "@/components/content/Content2";
 import Testimonial1 from "@/components/testimonials/Testimonial1";
 import ContactForm2 from "@/components/contact-forms/ContactForm2";
 import Pill1 from "@/components/pills/Pill1";
@@ -82,7 +82,16 @@ const Home = () => {
         <div className="col-span-6 h-32 w-full bg-blue-500">teste</div>
       </div> */}
 
-      {/* <AccordionSection2 background="bg-finalGradient" /> */}
+      <AccordionSection2
+        background="bg-finalGradient"
+        button={
+          <Button1
+            style="mr-0 sm:mr-6 mb-5 sm:mb-0 w-fit text-typo-primary"
+            text="h studio btn"
+            link="/"
+          />
+        }
+      />
 
       <Testimonial1
         name="Judith Black"
@@ -95,6 +104,11 @@ const Home = () => {
       />
 
       <ContactForm2
+        background="bg-contactGradient"
+        subtitle="Contact"
+        title="Get in touch."
+        text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        socialLink="/"
         email="contact@hokup.com.br"
         phone="+55 11 9 9697-8140"
         social="@hokup.studio"

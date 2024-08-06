@@ -63,7 +63,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
         <div className="flex flex-col pb-5">
           <p className="uppercase text-primary-default ">{props.steps}</p>
           <h1
-            className={`text-6xl font-bold ${
+            className={` text-4xl font-bold sm:text-6xl ${
               isOpen ? "text-typo-primary" : "text-typo-secondary"
             } transition duration-200 ease-out hover:text-typo-primary hover:transition hover:duration-200 hover:ease-out`}
           >
@@ -92,22 +92,6 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
               <p className="pb-5 text-[22px] leading-[28px] tracking-[-1.1px] text-typo-secondary">
                 {props.text}
               </p>
-              {/* <div
-                className={`flex min-h-[82px] w-full flex-row flex-wrap items-center justify-start bg-cover bg-right bg-no-repeat pt-5 ${props.background}`}
-              >
-                {props.tags.map((tag) => (
-                  <div className="mb-5 ml-5" key={tag}>
-                    <div
-                      key={tag}
-                      className="bg-bg-gradient flex h-[42px] w-fit items-center justify-center rounded-[21px] border border-[#303030] px-5 py-[10px]"
-                    >
-                      <span className="text-[18px] uppercase leading-[normal] tracking-[-0.54px] text-typo-secondary">
-                        {tag}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div> */}
             </motion.div>
           </motion.section>
         )}

@@ -112,6 +112,7 @@ module.exports = {
         initialGradient: "linear-gradient(0deg, #0A2723 0%, #000 100%)",
         middleGradient: "linear-gradient(180deg, #0A2723 0%, #0A2723 100%)",
         finalGradient: "linear-gradient(180deg, #0A2723 0%, #000 100%)",
+        contactGradient: "linear-gradient(180deg, #000 0%, #0A2723 100%)",
         headerGradient:
           "linear-gradient(90deg, rgba(0, 0, 0, 0.20) 0%, rgba(38, 38, 38, 0.20) 100%)",
       },

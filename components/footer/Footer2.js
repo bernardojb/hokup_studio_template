@@ -7,8 +7,8 @@ import Button1 from "../buttons/Button1";
 
 const Footer2 = ({ text, logo }) => {
   return (
-    <footer className="">
-      <div className="container mx-auto">
+    <footer className="px-4">
+      <div className="">
         <div className="grid grid-cols-12 gap-x-4 gap-y-12 pb-24 pt-24">
           <div className=" col-span-12 lg:col-span-6">
             {/* <!-- Logo --> */}
@@ -62,7 +62,7 @@ const Footer2 = ({ text, logo }) => {
         </div>
       </div>
 
-      <div className="group container mx-auto border-t-[1px] border-[#c0c0c036] bg-black transition duration-500 ease-out">
+      <div className="group border-t-[1px] border-[#c0c0c036] bg-black transition duration-500 ease-out">
         <div className="flex flex-col justify-between py-9 lg:flex-row">
           <div className="container mb-5 flex items-center lg:mb-0">
             <p className="pr-2 font-primary text-base text-typo-secondary">

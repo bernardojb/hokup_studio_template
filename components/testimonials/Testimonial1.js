@@ -1,6 +1,15 @@
-export default function Testimonial1({ image, text, name, position, logo }) {
+export default function Testimonial1({
+  image,
+  text,
+  name,
+  position,
+  logo,
+  background,
+}) {
   return (
-    <section className="relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8">
+    <section
+      className={`relative isolate overflow-hidden px-6 py-24 sm:py-32 lg:px-8 ${background}`}
+    >
       <div className="absolute inset-0 -z-10" />
       <div className="mx-auto max-w-2xl lg:max-w-4xl">
         <img alt="" src={logo} className="mx-auto h-12" />
@@ -23,11 +32,13 @@ export default function Testimonial1({ image, text, name, position, logo }) {
                 height={3}
                 viewBox="0 0 2 2"
                 aria-hidden="true"
-                className="fill-gray-900"
+                className="fill-typo-secondary"
               >
                 <circle r={1} cx={1} cy={1} />
               </svg>
-              <div className="font-primary text-typo-secondary">{position}</div>
+              <div className="font-primary font-normal text-typo-secondary">
+                {position}
+              </div>
             </div>
           </figcaption>
         </figure>

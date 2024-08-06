@@ -63,7 +63,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
         <div className="flex flex-col pb-5">
           <p className="uppercase text-primary-default ">{props.steps}</p>
           <h1
-            className={`text-6xl font-bold ${
+            className={` text-4xl font-bold sm:text-6xl ${
               isOpen ? "text-typo-primary" : "text-typo-secondary"
             } transition duration-200 ease-out hover:text-typo-primary hover:transition hover:duration-200 hover:ease-out`}
           >

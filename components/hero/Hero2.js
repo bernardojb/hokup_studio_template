@@ -9,7 +9,7 @@ function Hero2({ title, text, background }) {
     <section className={`h-[100svh] w-full text-white ${background}`}>
       <div className="flex h-full w-full flex-col items-center justify-center">
         <div className="flex w-full flex-col items-center justify-center text-center">
-          <h1 className="mb-6 max-w-5xl text-center text-6xl font-bold">
+          <h1 className="mb-6 max-w-5xl text-center text-4xl font-bold sm:text-6xl">
             {title}
           </h1>
           <p className="mb-11 max-w-xl text-center text-lg font-normal">

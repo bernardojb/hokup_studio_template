@@ -3,7 +3,7 @@ import React from "react";
 function LogoClouds1({ title, background }) {
   return (
     <div className={` py-24 sm:py-32 ${background}`}>
-      <div className="mx-auto max-w-7xl px-6 md:px-8">
+      <div className="mx-auto max-w-7xl px-4">
         <h2 className="text-center font-primary text-lg font-semibold leading-8 text-typo-primary">
           {title}
         </h2>

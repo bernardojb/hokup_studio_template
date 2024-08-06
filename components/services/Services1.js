@@ -44,7 +44,7 @@ function Services1({ subtitle, title, text, backgroundColor, pillColor }) {
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="mx-auto max-w-2xl lg:text-center">
           <h2 class="font-primary text-primary-default">{subtitle}</h2>
-          <p class="mt-2 font-primary text-3xl font-bold tracking-tight text-typo-primary sm:text-4xl">
+          <p class="mt-2 font-primary text-4xl font-bold tracking-tight text-typo-primary sm:text-6xl">
             {title}
           </p>
           <p class="mt-6 font-secondary text-lg leading-8 text-typo-secondary">

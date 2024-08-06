@@ -2,21 +2,29 @@ import React from "react";
 import { generalData } from "@/data/general-data";
 import Image from "next/image";
 
-function ContactForm2({ email, phone, social, socialLink }) {
+function ContactForm2({
+  subtitle,
+  title,
+  text,
+  email,
+  phone,
+  social,
+  socialLink,
+  background,
+}) {
   return (
-    <section className="container mx-auto py-32">
+    <section className={`px-5 py-32 ${background}`}>
       <div className="grid grid-cols-12 gap-4 gap-y-20 lg:gap-y-0">
-        <div className="col-span-12 lg:col-span-5 lg:col-start-2">
+        <div className="col-span-12 lg:col-span-3 lg:col-start-2">
           <div className="flex flex-col">
             <p className="mb-3 font-primary text-base text-primary-default">
-              Contact
+              {subtitle}
             </p>
-            <h1 className="mb-6 font-primary text-5xl font-bold text-typo-primary">
-              Get in touch.
+            <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+              {title}
             </h1>
-            <p className="mb-12 max-w-md font-secondary text-lg text-typo-secondary">
-              We design, build and ship custom websites by combining design and
-              technology to create unique web projects for your brand.
+            <p className="mb-12 max-w-lg font-secondary text-lg text-typo-secondary">
+              {text}
             </p>
             <div className="flex flex-row">
               {generalData.links.map((i) => (
@@ -33,31 +41,43 @@ function ContactForm2({ email, phone, social, socialLink }) {
             </div>
           </div>
         </div>
-        <div className="col-span-12 lg:col-span-6">
+        <div className="col-span-12 lg:col-span-6 lg:col-start-6">
           <div className="flex flex-col">
             <div className=" mb-16 ">
               <p className="mb-3 font-primary text-base text-typo-secondary">
                 Email
               </p>
-              <h1 className="mb-6 font-primary text-5xl font-bold text-typo-primary">
-                {email}
-              </h1>
+              <div className="w-fit">
+                <a href={`mailto:${email}`}>
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                    {email}
+                  </h1>
+                </a>
+              </div>
             </div>
             <div className=" mb-16 ">
               <p className="mb-3 font-primary text-base text-typo-secondary">
                 Phone
               </p>
-              <h1 className="mb-6 font-primary text-5xl font-bold text-typo-primary">
-                {phone}
-              </h1>
+              <div className="w-fit">
+                <a href={`tel:${phone}`}>
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                    {phone}
+                  </h1>
+                </a>
+              </div>
             </div>
             <div className=" mb-16 ">
               <p className="mb-3 font-primary text-base text-typo-secondary">
                 Social
               </p>
-              <h1 className="mb-6 font-primary text-5xl font-bold text-typo-primary">
-                {social}
-              </h1>
+              <div className="w-fit">
+                <a href={socialLink}>
+                  <h1 className="mb-6 font-primary text-3xl font-bold text-typo-primary sm:text-5xl">
+                    {social}
+                  </h1>
+                </a>
+              </div>
             </div>
           </div>
         </div>
