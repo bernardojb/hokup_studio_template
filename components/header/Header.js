@@ -74,12 +74,12 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className="fixed z-[999] flex min-h-[80px] w-screen flex-col bg-white bg-opacity-10 backdrop-blur-md"
+        className="fixed z-[999] flex min-h-[80px] w-full flex-col bg-white bg-opacity-10 px-5 backdrop-blur-md"
         animate={toggle ? "open" : "closed"}
         variants={openNav}
         initial={false}
       >
-        <div className="container mx-auto flex h-[80px] min-h-[80px] w-full flex-row items-center">
+        <div className="mx-auto flex h-[80px] min-h-[80px] w-full flex-row items-center">
           {/* Logo */}
           <a href="/" className="pr-5">
             <Image
@@ -91,12 +91,12 @@ export default function Header() {
           </a>
 
           {/* Navigation */}
-          <div className="ml-auto hidden w-full flex-row items-center justify-end text-xs text-white md:flex">
+          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-primary md:flex">
             {headerData.map((i) => (
               <Link
                 key={i.id}
                 href={i.href}
-                className="pl-10 text-white hover:text-red-800 "
+                className="pl-10 font-primary text-lg font-bold uppercase hover:text-primary-light"
               >
                 {i.text}
               </Link>

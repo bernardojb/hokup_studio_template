@@ -27,11 +27,11 @@ const Footer = () => {
                     alt="CIRSYS Tech"
                   /> */}
             </Link>
-            <p className="text-secondary mb-2 max-w-[260px] text-xs ">
-              {" "}
-              {generalData.slogan}{" "}
+            <p className="text-secondary mb-2 max-w-[260px] text-xs text-typo-primary">
+              We design, build and ship custom websites by combining design and
+              technology to create unique web projects for your brand.
             </p>
-            <p className="text-secondary mb-2 max-w-[260px] text-xs ">
+            <p className="text-secondary mb-2 max-w-[260px] text-xs text-typo-primary">
               {" "}
               © {new Date().getFullYear()} {generalData.name}{" "}
             </p>
@@ -92,7 +92,7 @@ const Footer = () => {
               className={`${single.diffClass} col-span-6 lg:col-span-2`}
               key={single.id}
             >
-              <h4 className="text-secondary text-md mb-6 text-footer-title">
+              <h4 className="text-secondary text-md mb-6 text-typo-primary">
                 {single.title}
               </h4>
               <ul className="text-md flex flex-col text-white ">
@@ -102,7 +102,7 @@ const Footer = () => {
                     <li key={id} className="my-1">
                       <Link
                         href={href}
-                        className="text-footer-text transition duration-200 ease-out hover:text-footer-text-hover"
+                        className="text-footer-text hover:text-footer-text-hover transition duration-200 ease-out"
                       >
                         {text}
                       </Link>
@@ -115,7 +115,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="group bg-black transition duration-500 ease-out hover:bg-white">
+      <div className="group bg-white transition duration-500 ease-out hover:bg-white">
         <a className="" href="https://hokup.com.br" target="_blank">
           <div className="container flex items-center ">
             <Image
@@ -124,9 +124,7 @@ const Footer = () => {
               width={12}
               height={12}
             />
-            <p className="pr-2 text-xs text-white group-hover:font-bold group-hover:text-black">
-              created at hokup.com.br
-            </p>
+            <p className="pr-2 text-xs text-white">created at hokup.com.br</p>
           </div>
         </a>
       </div>

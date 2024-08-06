@@ -1,24 +1,24 @@
 const headerData = [
   {
     id: 1,
-    href: "/sobre",
-    text: "Sobre",
+    href: "/sections",
+    text: "Sections",
   },
   {
     id: 2,
-    href: "/",
-    text: "Link 2",
+    href: "/components",
+    text: "Components",
   },
-  {
-    id: 3,
-    href: "/",
-    text: "Link 3",
-  },
-  {
-    id: 4,
-    href: "/contato",
-    text: "Contato",
-  },
+  // {
+  //   id: 3,
+  //   href: "/",
+  //   text: "Link 3",
+  // },
+  // {
+  //   id: 4,
+  //   href: "/contato",
+  //   text: "Contato",
+  // },
 ];
 
 export { headerData };
