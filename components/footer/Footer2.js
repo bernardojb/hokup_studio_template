@@ -1,8 +1,9 @@
 // 'use client'
 import Link from "next/link";
 import Image from "next/image";
-import { footerData2 } from "@/data/footer-data2";
+// import { footerData2 } from "@/data/footer-data2";
 import { generalData } from "@/data/general-data";
+import { routerData } from "@/data/router-data";
 import Button1 from "../buttons/Button1";
 
 const Footer2 = ({ text, logo }) => {
@@ -43,16 +44,18 @@ const Footer2 = ({ text, logo }) => {
           <div className=" col-span-12 lg:col-span-6">
             <div className="flex flex-col items-start justify-start lg:items-end lg:justify-end">
               <div className="flex flex-row items-start justify-start lg:justify-end">
-                {footerData2.map((single) => (
-                  <Link href={single.href} key={single.id}>
-                    <h4 className=" mb-6 mr-8 font-primary text-lg font-bold text-typo-extra lg:ml-8 lg:mr-0 ">
-                      {single.title}
-                    </h4>
+                {routerData.map((single) => (
+                  <Link
+                    href={single.href}
+                    key={single.id}
+                    className="mb-6 mr-8 font-primary text-lg font-bold uppercase text-typo-extra hover:text-primary-light lg:ml-8 lg:mr-0"
+                  >
+                    {single.title}
                   </Link>
                 ))}
               </div>
               <Button1
-                link=""
+                link="/"
                 text="studio btn"
                 style="w-fit bg-transparent text-typo-primary font-primary"
                 target=""

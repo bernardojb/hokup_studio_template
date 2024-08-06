@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import MenuToggle from "./Toggle";
 import Link from "next/link";
 import { generalData } from "@/data/general-data";
-import { headerData } from "@/data/header-data";
+// import { headerData } from "@/data/header-data";
+import { routerData } from "@/data/router-data";
 
 export default function Header() {
   const [toggle, setToggle] = useState(false);
@@ -92,13 +93,13 @@ export default function Header() {
 
           {/* Navigation */}
           <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-extra lg:flex">
-            {headerData.map((i) => (
+            {routerData.map((i) => (
               <Link
                 key={i.id}
                 href={i.href}
-                className="pl-10 font-primary text-lg font-bold uppercase hover:text-primary-light"
+                className="ml-10 font-primary text-lg font-bold uppercase hover:text-primary-light"
               >
-                {i.text}
+                {i.title}
               </Link>
             ))}
           </div>
@@ -128,7 +129,7 @@ export default function Header() {
             className="block"
           >
             <ul className=" mt-5 text-lg uppercase text-white">
-              {headerData.map((i) => (
+              {routerData.map((i) => (
                 <Link
                   key={i.id}
                   href={i.href}
@@ -136,7 +137,7 @@ export default function Header() {
                   onClick={() => setToggle(false)}
                 >
                   <p className={`py-2 font-primary text-base font-bold`}>
-                    {i.text}
+                    {i.title}
                   </p>
                 </Link>
               ))}

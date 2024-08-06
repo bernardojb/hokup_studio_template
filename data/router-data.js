@@ -1,4 +1,4 @@
-const headerData = [
+const routerData = [
   {
     id: 1,
     href: "/",
@@ -31,4 +31,4 @@ const headerData = [
   },
 ];
 
-export { headerData };
+export { routerData };
