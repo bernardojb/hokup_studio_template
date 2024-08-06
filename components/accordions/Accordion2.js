@@ -92,7 +92,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
               <p className="pb-5 text-[22px] leading-[28px] tracking-[-1.1px] text-typo-secondary">
                 {props.text}
               </p>
-              {/* <div
+              <div
                 className={`flex min-h-[82px] w-full flex-row flex-wrap items-center justify-start bg-cover bg-right bg-no-repeat pt-5 ${props.background}`}
               >
                 {props.tags.map((tag) => (
@@ -107,7 +107,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
                     </div>
                   </div>
                 ))}
-              </div> */}
+              </div>
             </motion.div>
           </motion.section>
         )}
@@ -116,7 +116,7 @@ const AccordionSimpleCard = ({ i, expanded, setExpanded, ...props }) => {
   );
 };
 
-const Accordion1 = () => {
+const Accordion2 = () => {
   const [expanded, setExpanded] = useState(0);
 
   return (
@@ -138,4 +138,4 @@ const Accordion1 = () => {
   );
 };
 
-export default Accordion1;
+export default Accordion2;

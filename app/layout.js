@@ -7,6 +7,7 @@ import SmoothScroll from "@/components/smooth-scroll/SmoothScroll";
 //Components
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Footer2 from "@/components/footer/Footer2";
 import { metaData } from "@/data/meta-data";
 import Animation from "@/components/animations/Animation";
 import { AnimatePresence } from "framer-motion";
@@ -66,7 +67,11 @@ export default function RootLayout({ children }) {
         <Animation>
           <Header />
           <SmoothScroll>{children}</SmoothScroll>
-          <Footer />
+          <Footer2
+            logo="/assets/main/main-logo.svg"
+            text=" We design, build and ship custom websites by combining design and
+              technology to create unique web projects for your brand."
+          />
         </Animation>
         <Analytics />
       </body>

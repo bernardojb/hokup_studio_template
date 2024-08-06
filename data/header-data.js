@@ -1,24 +1,34 @@
 const headerData = [
   {
     id: 1,
-    href: "/sections",
-    text: "Sections",
+    href: "/",
+    text: "home",
   },
   {
     id: 2,
-    href: "/components",
-    text: "Components",
+    href: "/",
+    text: "about",
   },
-  // {
-  //   id: 3,
-  //   href: "/",
-  //   text: "Link 3",
-  // },
-  // {
-  //   id: 4,
-  //   href: "/contato",
-  //   text: "Contato",
-  // },
+  {
+    id: 3,
+    href: "/",
+    text: "projects",
+  },
+  {
+    id: 4,
+    href: "/",
+    text: "contact",
+  },
+  {
+    id: 5,
+    href: "/",
+    text: "privacy",
+  },
+  {
+    id: 6,
+    href: "/",
+    text: "login",
+  },
 ];
 
 export { headerData };

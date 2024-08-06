@@ -74,7 +74,7 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className="fixed z-[999] flex min-h-[80px] w-full flex-col bg-white bg-opacity-10 px-5 backdrop-blur-md"
+        className="bg-headerGradient fixed z-[999] flex min-h-[80px] w-full flex-col border-b-[1px] border-[#fff2] px-5 backdrop-blur-lg"
         animate={toggle ? "open" : "closed"}
         variants={openNav}
         initial={false}
@@ -91,7 +91,7 @@ export default function Header() {
           </a>
 
           {/* Navigation */}
-          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-primary md:flex">
+          <div className="ml-auto hidden w-full flex-row items-center justify-end text-typo-primary lg:flex">
             {headerData.map((i) => (
               <Link
                 key={i.id}
@@ -107,7 +107,7 @@ export default function Header() {
           <motion.nav
             initial={false}
             animate={toggle ? "open" : "closed"}
-            className="ml-auto block md:hidden"
+            className="ml-auto block lg:hidden"
           >
             <MenuToggle
               toggle={() => {
@@ -118,7 +118,7 @@ export default function Header() {
         </div>
 
         <div
-          className={`${toggle ? "" : "hidden"} container flex h-full flex-col justify-between md:hidden`}
+          className={`${toggle ? "" : "hidden"} container flex h-full flex-col justify-between lg:hidden`}
         >
           <motion.div
             initial={false}

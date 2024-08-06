@@ -14,6 +14,11 @@ import AccordionSection1 from "@/sections/accordion/AccordionSection1";
 import AccordionSection2 from "@/sections/accordion/AccordionSection2";
 import Stats1 from "@/components/stats/Stats1";
 import Content1 from "@/components/content/Content1";
+import Accordion1 from "@/components/accordions/Accordion1";
+import Testimonial1 from "@/components/testimonials/Testimonial1";
+import ContactForm2 from "@/components/contact-forms/ContactForm2";
+import Pill1 from "@/components/pills/Pill1";
+import Button1 from "@/components/buttons/Button1";
 
 const Home = () => {
   return (
@@ -22,15 +27,24 @@ const Home = () => {
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
         background="bg-hero"
-        pill={true}
-        pillText="Hokup studio pill component."
-        pillLink="#pill-link"
-        pillHighlightText="See More"
-        pillHighlightColor="text-typo-primary"
-        buttonText="h studio btn"
-        buttonLink="#button-link-1"
-        buttonText2="h studio btn"
-        buttonLink2="#button-link-2"
+        pill={
+          <Pill1
+            text="Hokup studio pill component."
+            link="/"
+            pillHighlightText="See more"
+            pillHighlightColor="text-typo-primary"
+          />
+        }
+        button={
+          <>
+            <Button1
+              style="mr-0 sm:mr-6 mb-5 sm:mb-0"
+              text="h studio btn"
+              link="/"
+            />
+            <Button1 style="bg-transparent" text="h studio btn" link="/" />
+          </>
+        }
       />
 
       <LogoClouds1
@@ -49,99 +63,42 @@ const Home = () => {
         text={
           "We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
         }
-        backgroundColor="bg-black"
+        background="bg-black"
         image="/assets/images/image-1.jpg"
       />
 
       <Services1
-        backgroundColor="bg-black"
+        backgroundColor="bg-initialGradient"
         subtitle="A better solution"
         title="Hokup studio. Custom template websites made on demand."
         text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
         pillColor="bg-primary-default"
       />
 
-      <section>
-        <Stats1 />
-      </section>
+      <Stats1 background="bg-middleGradient" />
 
-      {/* <section className="py-20">
-        <Marquee
-          gradient
-          gradientColor="#000"
-          direction="right"
-          className="pb-10"
-        >
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-        </Marquee>
-        <Marquee
-          gradient
-          gradientColor="#000"
-          direction="left"
-          className="pb-10"
-        >
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-          <div className="mx-20 h-[50px] w-[180px] bg-slate-900"></div>
-        </Marquee>
-      </section> */}
+      {/* <div className="grid grid-cols-12">
+        <div className="col-span-4 h-32 w-full bg-red-500">teste</div>
+        <div className="col-span-6 h-32 w-full bg-blue-500">teste</div>
+      </div> */}
 
-      {/* <section className="container">
-        <AccordionSection1 />
-      </section> */}
-      {/* <section>
-        <div className="grid grid-cols-12">
-          <div className="col-span-5 bg-primary-light">teste</div>
-          <div className="col-span-7 bg-primary-default">teste</div>
-        </div>
-      </section> */}
+      {/* <AccordionSection2 background="bg-finalGradient" /> */}
 
-      {/* <section> */}
-      {/* <AccordionSection1 /> */}
-      {/* <AccordionSection2 /> */}
-      {/* </section> */}
+      <Testimonial1
+        name="Judith Black"
+        image=""
+        logo="/assets/icons/logos/logo-hokup.svg"
+        text=" “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              expedita voluptas culpa sapiente alias molestiae. Numquam corrupti
+              in laborum sed rerum et corporis.”"
+        position="CEO of Workcation"
+      />
 
-      {/* <section>
-        <div className=" grid grid-cols-12 gap-4">
-          <div className="col-span-4 col-start-2 flex flex-col ">
-            <p className="mb-3 font-semibold text-primary-default">Process</p>
-            <h1 className="pb-10 font-primary text-5xl font-bold text-typo-primary">
-              How we merge and get things done.
-            </h1>
-            <p className="font-secondary text-lg text-typo-secondary">
-              We design, build and ship custom websites by combining design and
-              technology to create unique web projects for your brand.
-            </p>
-          </div>
-          <div className="col-span-6 bg-white">teste</div>
-        </div>
-      </section> */}
-
-      {/* <section className="py-20">
-        <div className="flex items-center justify-center">
-          <h1 className="hover-base cursor-pointer text-[100px] text-white hover:text-blue-700">
-            HOVER-BASE
-          </h1>
-        </div>
-      </section> */}
-      {/* CONTATO */}
-      {/* <ContactForm /> */}
+      <ContactForm2
+        email="contact@hokup.com.br"
+        phone="+55 11 9 9697-8140"
+        social="@hokup.studio"
+      />
     </>
   );
 };

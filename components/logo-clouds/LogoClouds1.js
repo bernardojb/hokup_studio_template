@@ -1,10 +1,10 @@
 import React from "react";
 
-function LogoClouds1({ title, backgroundColor }) {
+function LogoClouds1({ title, background }) {
   return (
-    <div className={` py-24 sm:py-32`}>
+    <div className={` py-24 sm:py-32 ${background}`}>
       <div className="mx-auto max-w-7xl px-6 md:px-8">
-        <h2 className="text-center text-lg font-semibold leading-8 text-typo-primary">
+        <h2 className="text-center font-primary text-lg font-semibold leading-8 text-typo-primary">
           {title}
         </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-8 sm:gap-x-10 md:mx-0 md:max-w-none">
