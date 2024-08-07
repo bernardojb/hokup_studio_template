@@ -1,24 +1,28 @@
 "use client";
+//Setup
 import * as React from "react";
-import Image from "next/image";
-import Link from "next/link";
-import ContactForm from "@/components/contact-forms/ContactForm";
-import { motion } from "framer-motion";
-import Marquee from "react-fast-marquee";
-import Hero1 from "@/components/hero/Hero1";
-import Hero2 from "@/components/hero/Hero2";
-import Services1 from "@/components/services/Services1";
+
+//Components
 import LogoClouds1 from "@/components/logo-clouds/LogoClouds1";
 import LogoClouds2 from "@/components/logo-clouds/LogoClouds2";
-import AccordionSection1 from "./sections/accordion/AccordionSection1";
-import AccordionSection2 from "./sections/accordion/AccordionSection2";
-import Stats1 from "@/components/stats/Stats1";
-import Content1 from "@/components/content/Content1";
-import Content2 from "@/components/content/Content2";
 import Testimonial1 from "@/components/testimonials/Testimonial1";
 import ContactForm2 from "@/components/contact-forms/ContactForm2";
 import Pill1 from "@/components/pills/Pill1";
 import Button1 from "@/components/buttons/Button1";
+import Stats1 from "@/components/stats/Stats1";
+import Stats2 from "@/components/stats/Stats2";
+import Content1 from "@/components/content/Content1";
+import Content2 from "@/components/content/Content2";
+import ContactForm from "@/components/contact-forms/ContactForm";
+import Marquee from "react-fast-marquee";
+import Services1 from "@/components/services/Services1";
+
+//Sections
+import Hero1 from "@/components/hero/Hero1";
+import Hero2 from "@/components/hero/Hero2";
+import AccordionSection1 from "./sections/accordion/AccordionSection1";
+import AccordionSection2 from "./sections/accordion/AccordionSection2";
+import Teams1 from "@/components/teams/Teams1";
 
 const Home = () => {
   return (
@@ -52,7 +56,41 @@ const Home = () => {
         }
       />
 
+      <Hero2
+        background="bg-hero"
+        pill={
+          <Pill1
+            text="Hokup studio pill component."
+            link="/"
+            pillHighlightText="See more"
+            pillHighlightColor="text-typo-primary"
+          />
+        }
+        title="Hokup studio. Custom template websites made on demand."
+        text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        button={
+          <>
+            <Button1
+              style="mr-0 sm:mr-6 mb-5 sm:mb-0"
+              text="h studio btn"
+              link="/"
+            />
+            <Button1
+              style="bg-transparent"
+              text="h studio btn"
+              link="/"
+              arrow
+            />
+          </>
+        }
+      />
+
       <LogoClouds1
+        title="Over 10.000 projects created."
+        background="bg-black"
+      />
+
+      <LogoClouds2
         title="Over 10.000 projects created."
         background="bg-black"
       />
@@ -67,6 +105,23 @@ const Home = () => {
         image="/assets/images/image-1.jpg"
       />
 
+      <Content2
+        subtitle={"A better solution"}
+        title={"Hokup studio. Custom template websites made on demand."}
+        text={
+          "We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        }
+        background="bg-gray-900"
+        image="/assets/images/image-1.jpg"
+        button={
+          <Button1
+            style="mr-0 sm:mr-6 mb-5 sm:mb-0 text-typo-primary"
+            text="h studio btn"
+            link="/"
+          />
+        }
+      />
+
       <Services1
         background="bg-initialGradient"
         subtitle="A better solution"
@@ -76,6 +131,12 @@ const Home = () => {
       />
 
       <Stats1 background="bg-middleGradient" />
+
+      <Stats2
+        background=""
+        title="Stats title"
+        text="Short description pagrapha about how this stats are awesome."
+      />
 
       <AccordionSection2
         background="bg-finalGradient"
@@ -97,6 +158,12 @@ const Home = () => {
               in laborum sed rerum et corporis.”"
         position="CEO of Workcation"
         background="bg-transparent"
+      />
+
+      <Teams1
+        title="Meet our leadership"
+        text="We design, build and ship custom websites by combining design and technology to create unique web projects for your brand."
+        background="bg-black"
       />
 
       <ContactForm2

@@ -44,16 +44,6 @@ export default function Content1({ background, image, subtitle, title, text }) {
                     className="relative pl-9 font-secondary"
                   >
                     <dt className="inline font-secondary font-semibold text-primary-default">
-                      {/* <feature.icon
-                        aria-hidden="true"
-                        className="absolute left-1 top-1 h-5 w-5 text-indigo-600"
-                      /> */}
-                      {/* <Image
-                        src={feature.icon}
-                        width="20"
-                        height="20"
-                        alt="Icon"
-                      /> */}
                       {feature.name}
                     </dt>{" "}
                     <dd className="inline font-secondary text-typo-secondary">

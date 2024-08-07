@@ -75,12 +75,12 @@ export default function Header() {
   return (
     <>
       <motion.div
-        className="fixed z-[999] flex min-h-[80px] w-full flex-col border-b-[1px] border-[#fff2] bg-headerGradient px-4 backdrop-blur-lg"
+        className="fixed z-[999] flex min-h-[6rem] w-full flex-col border-b-[1px] border-[#fff2] bg-headerGradient px-4 backdrop-blur-lg"
         animate={toggle ? "open" : "closed"}
         variants={openNav}
         initial={false}
       >
-        <div className="mx-auto flex h-[80px] min-h-[80px] w-full flex-row items-center">
+        <div className="mx-auto flex h-[80px] min-h-[6rem] w-full flex-row items-center">
           {/* Logo */}
           <a href="/" className="pr-5">
             <Image
